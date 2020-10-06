@@ -18,5 +18,8 @@ def init_players(player_number):
     player_list = []
     for i in range(player_number):
         player_list.append(Player(i))
+    for player in player_list:
+        print(f"Insert name for player {player}:")
+        player.get_player_name()
 
 
