@@ -13,10 +13,13 @@ class Player():
         self.name = input()
     
     def player_move(self):
+        
         # de incercat try statement
+
         print(f"It is {self.name}'s turn")
         print("Input x coord")
         self.p_input = int(input())
+        self.coord = []
         if  isinstance(self.p_input,int):
             self.coord.append(self.p_input)
         else:
